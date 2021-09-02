@@ -1,0 +1,15 @@
+.bg-success1 {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-color: bisque; */
+}
+
+.h11 {
+    height: 250px;
+}
+
+#spinner {
+    display: none;
+    margin: auto;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Book Archive</title>
+    <!-- style sheet -->
+    <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body class="bg bg-success1">
+    <section class="container">
+        <img class="rounded mx-auto d-block" src="images/logo.png" alt="" height="150px" width="150px">
+        <h1 class="text-center text-white text-capitalize">Welcome To the Book Library!</h1>
+
+
+
+        <!-- input field -->
+        <div class="input-group mt-3 mb-5 m-auto w-50">
+            <input type="text" class="form-control" placeholder="Search For the Books.." aria-label="Recipient's username" aria-describedby="button-addon2" id="Search_txt">
+            <button class="btn btn-outline-secondary text-white bg bg-danger" type="button" id="Search_btn" onclick="LoadAll()">Button</button>
+        </div>
+        <h5></h5>
+        <!-- ------- -->
+        <!-- spinners -->
+        <div class="text-center">
+            <div class="spinner-border text-white" id="spinner" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+        <!-- ------ -->
+        <!-- total books found -->
+        <div id="total_book" class="align text-center mb-5 text-white">
+
+        </div>
+        <!-- ---- -->
+        <!-- Alert if nothing found -->
+        <section id="alert">
+
+        </section>
+        <!-- ---------- -->
+
+        <!-- display field -->
+
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="card_main_div">
+
+
+
+        </div>
+
+        <!-- ---------- -->
+
+
+    </section>
+
+
+
+
+
+
+
+    <!-- javascript  -->
+    <script src="js/book.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+
+</html>
